@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main" 
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/cs">
+    
+  
+
+   <Button
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="assist" 
+        android:onClick="assist"
+        android:drawableLeft="@drawable/help"
+        />
+   
+    <Button
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Start Sync" 
+        android:onClick="sync"
+        android:drawableLeft="@drawable/sync"
+        />
+    
+     <Button
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Settings" 
+        android:drawableLeft="@drawable/set"
+        android:onClick="settings"/>
+
+</LinearLayout>

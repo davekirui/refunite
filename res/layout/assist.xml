@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+     <TextView
+         android:text="Missing Person" 
+          android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name" />
+    <EditText
+        android:id="@+id/fn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name" 
+         android:layout_below="@+id/email"/>
+
+    <EditText
+        android:id="@+id/ln"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fn"
+        android:hint="Last Name" />
+
+    <EditText
+        android:id="@+id/nick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln"
+        android:hint="Other Name/Nickname" />
+    
+
+    <Spinner
+        android:id="@+id/gender"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nick"
+        android:hint="country"
+        android:entries="@array/gender" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:hint="country" />
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age"
+        android:hint="Country of Birth" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country"
+        android:hint="City of Birth" />
+
+    <EditText
+        android:id="@+id/tribe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:hint="Tribe" />
+
+    <EditText
+        android:id="@+id/clan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tribe"
+        android:hint="Clan" />
+
+    <EditText
+        android:id="@+id/sclan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clan"
+        android:hint="SubClan" />
+
+    <EditText
+        android:id="@+id/mum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sclan"
+        android:hint="Missing Persons Mothers Name" />
+
+    <EditText
+        android:id="@+id/extra"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mum"
+        android:hint="Other usefull info" />
+     <Button
+           android:id="@+id/btn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Assign"
+            android:layout_below="@+id/extra"
+            android:onClick="assist"
+           />
+
+</RelativeLayout>
+</ScrollView>

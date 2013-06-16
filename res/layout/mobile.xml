@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"    
+    tools:context=".Mobile" 
+   >
+   
+    <RelativeLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title">
+        
+        <TextView  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assist a person"
+        android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+
+    <RelativeLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerInParent="true"
+        android:background="#CCCCCC">
+ 
+    
+    <Spinner 
+        android:id="@+id/country"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="country"
+        android:layout_below="@+id/tvmob"
+        android:paddingBottom="6dip"
+        />
+      <EditText 
+            android:id="@+id/num"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter phone number"
+         android:layout_below="@+id/country"
+         android:paddingBottom="6dip"
+       
+        />
+       <CheckBox 
+           android:id="@+id/cb"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/num"
+           android:text="The person is 18 or above"
+           android:paddingBottom="10dip"/>
+
+       <Button
+           android:id="@+id/btnassign"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Assign"
+            android:layout_below="@+id/cb"
+            android:background="@drawable/btn"
+           />
+       </RelativeLayout>
+
+</RelativeLayout>
